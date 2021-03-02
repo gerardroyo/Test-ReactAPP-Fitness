@@ -3,11 +3,11 @@ import './styles/Welcome.css'
 
 const Welcome = ({userName}) => (
     <div className="container">
-            <div className="Fitness-User-Info">
-                <h1>Hello {userName}!</h1>
-                <p>Let's workout to get some gains!</p>
-            </div>
+        <div className="Fitness-User-Info">
+            <h1>Hello {userName}!</h1>
+            <p>Let's workout to get some gains!</p>
         </div>
+    </div>
 )
 /*function Welcome (props) {
     return (

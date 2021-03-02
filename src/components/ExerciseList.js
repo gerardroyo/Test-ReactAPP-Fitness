@@ -13,7 +13,7 @@ const ExerciseList = ({exercises}) => (
                     leftColor={exercise.leftColor}
                     rightColor={exercise.rightColor}
                 />
-            )
+            )   
         })}
     </div>
 )

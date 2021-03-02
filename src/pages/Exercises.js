@@ -36,17 +36,17 @@ class Exercises extends React.Component {
     
     render () {
         return (
-            <div>
-                <Welcome 
-                    userName="Gerard"
-                />
-                <ExerciseList 
-                    exercises={this.state.data}
-                />
-                <Add 
-                    img={AddImg}
-                />
-            </div>
+                <div>
+                    <Welcome 
+                        userName="Gerard"
+                    />
+                    <ExerciseList 
+                        exercises={this.state.data}
+                    />
+                    <Add 
+                        img={AddImg}
+                    />
+                </div>
         )
     }
 

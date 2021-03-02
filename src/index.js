@@ -11,5 +11,7 @@ import App from './components/App'
 
 const container = document.getElementById('root')
 
+
 // ReactDom.render(__QUE__,__DONDE__)
+
 ReactDom.render(<App />, container)

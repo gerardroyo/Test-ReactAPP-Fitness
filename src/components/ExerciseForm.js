@@ -23,12 +23,13 @@ class ExerciseForm extends React.Component {
                 <div className="form-group">
                     <input type="text" className="form-control" placeholder="img" name="img" onChange={onChange} value={form.img} />
                 </div>
-                <div className="form-row">
+                <div className="form-row col-3">
+                    <label for="exampleColorInput" class="form-label">Right Color // Left Color</label>
                     <div className="col">
-                        <input type="text" className="form-control" placeholder="leftColor" name="leftColor" onChange={onChange} value={form.leftColor} />
+                        <input type="color" className="form-control from-control-color" placeholder="leftColor" name="leftColor" onChange={onChange} value={form.leftColor} />
                     </div>
                     <div className="col">
-                        <input type="text" className="form-control" placeholder="rightColor" name="rightColor" onChange={onChange} value={form.rightColor} />    
+                        <input type="color" className="form-control from-control-color" placeholder="rightColor" name="rightColor" onChange={onChange} value={form.rightColor} />    
                     </div>
                 </div>
                 <div>
