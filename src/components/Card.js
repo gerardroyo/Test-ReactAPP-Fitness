@@ -21,19 +21,19 @@ class Card extends React.Component {
     }*/
 
     render() {
-        const { title, description, img, leftColor, rightColor} = this.props
+        const {Title, Description, Img, LeftColor, RightColor} = this.props
         return (
             <div className="container">
                 <div className="card mx-auto Fitness-Card"
-                style={{backgroundImage: `url(${circlesImg}), linear-gradient(to right, ${leftColor}, ${rightColor})`}}>
+                style={{backgroundImage: `url(${circlesImg}), linear-gradient(to right, ${LeftColor}, ${RightColor})`}}>
                     <div className="card-body">
                         <div className="row center">
                             <div className="col-6">
-                                <img src={img} className="float-right" />
+                                <img src={Img} className="float-right" />
                             </div>
                             <div className="col-6 Fitness-Card-Info">
-                                <h1>{title}</h1>
-                                <p>{description}</p>
+                                <h1>{Title}</h1>
+                                <p>{Description}</p>
                             </div>
                         </div>
                     </div>

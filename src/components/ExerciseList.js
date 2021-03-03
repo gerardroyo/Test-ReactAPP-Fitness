@@ -6,12 +6,12 @@ const ExerciseList = ({exercises}) => (
         { exercises.map((exercise) => {
             return (
                 <Card
-                    key={exercise.id}
-                    title={exercise.title}
-                    description={exercise.description}
-                    img={exercise.img}
-                    leftColor={exercise.leftColor}
-                    rightColor={exercise.rightColor}
+                    key={exercise.Exercisesid}
+                    title={exercise.Title}
+                    description={exercise.Description}
+                    img={exercise.Img}
+                    leftColor={exercise.LeftColor}
+                    rightColor={exercise.RightColor}
                 />
             )   
         })}
