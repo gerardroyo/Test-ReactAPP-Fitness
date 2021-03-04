@@ -15,7 +15,8 @@ class Exercises extends React.Component {
   }
 
   fetchExercises = async () => {
-    let res = await fetch('https://fitnessappi.herokuapp.com/api/exercises')
+    // https://fitnessappi.herokuapp.com/api/exercises
+    let res = await fetch('http://localhost:5000/api')
     let data = await res.json()
 
     this.setState({
@@ -27,12 +28,13 @@ class Exercises extends React.Component {
   render () {
       return (
               <div>
+                <div>
                   <Welcome 
                       userName="Gerard"
                   />
                   <ExerciseList 
                       exercises={this.state.data}
-                  />
+                /></div>
                   <Add 
                       img={AddImg}
                   />
